@@ -25,14 +25,14 @@ pipeline{
         stage('Build docker image'){
             steps{
                 script{
-                    sh 'docker build -t satyainv459/docker-jenkins:1.0 .'
+                    sh 'docker build -t sudhakarcgcp22/docker-jenkins:1.0 .'
                 }
             }
         }
         stage('Push docker images'){
             steps{
                 sh 'echo $dockerhub_PSW | docker login -u $dockerhub_USR --password-stdin'
-                 sh 'docker push satyainv459/docker-jenkins:1.0 '
+                 sh 'docker push sudhakarcgcp22/docker-jenkins:1.0 '
              }
             
         }
