@@ -20,5 +20,9 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+         
+         <build>
+                  <finalName>docker-jenkins</finalName>
+         </build>
 
 </project>
