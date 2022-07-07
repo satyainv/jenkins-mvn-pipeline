@@ -1,7 +1,7 @@
 pipeline{
     agent any
 	environment{
-		dockerhub=credentials('docker-pwd')
+		dockerhub=credentials('dockerhub')
 	}
     stages{
         stage('Code checkout'){
